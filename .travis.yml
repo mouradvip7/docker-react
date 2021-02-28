@@ -7,3 +7,16 @@ before_install:
 
 script:
   - docker run mouradvip7/docker-react npm run test -- --coverage
+
+#deploy(AWS for example):
+#  provider: elasticbeanstalk
+#  region: "region where our app have been deployed in amazon cloud"
+#  app: "App Name"
+#  env: "Aws environment"
+#  bucket_name: ""
+#  bucket_path : "docker"
+#  on:
+#     branch: master
+#  acces_key_id: $AWS_ACCESS_KEY
+#  secret_acces_key:
+#     secure: "$AWS_SECRET_KEY"
